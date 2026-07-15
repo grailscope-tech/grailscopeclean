@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "GrailScope",
+    "slug": "grailscope",
+    "scheme": "grailscope",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#0b1020",
+      "resizeMode": "contain"
+    },
+    "ios": { "supportsTablet": true, "bundleIdentifier": "app.grailscope.mobile" },
+    "android": { "package": "app.grailscope.mobile" },
+    "web": { "bundler": "metro" }
+  }
+}

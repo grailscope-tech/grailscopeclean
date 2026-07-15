@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GrailScope — Brand board</title>
+<style>
+:root{--navy:#0b1020;--blue:#2f6bff;--teal:#16d0a0;--up:#0aa66e;--down:#e5484d;--hold:#b07b00;--ink:#0c1424;--muted:#6b7689;--line:#e8ebf2;--soft:#f5f7fb;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--soft);color:var(--ink);padding:40px 20px}
+.wrap{max-width:920px;margin:0 auto;display:grid;gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:0 8px 24px rgba(16,24,40,.06)}
+h1{font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+.lockup{display:flex;align-items:center;gap:16px}
+.mark{width:72px;height:72px;border-radius:20px;background:var(--navy);display:grid;place-items:center}
+.mark svg{width:46px;height:46px}
+.word{font-size:38px;font-weight:800;letter-spacing:-1.2px}
+.word .g{background:linear-gradient(135deg,var(--blue),var(--teal));-webkit-background-clip:text;background-clip:text;color:transparent}
+.base{font-size:11px;font-weight:600;letter-spacing:2.5px;color:var(--muted);margin-top:4px}
+.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px}
+.sw{border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.sw .c{height:64px}.sw .l{padding:8px 10px;font-size:12px}.sw .l b{display:block;font-size:11px}.sw .l span{color:var(--muted);font-size:11px}
+.type p{margin:6px 0}
+.pill{display:inline-block;font-size:12px;font-weight:800;padding:5px 11px;border-radius:7px;margin-right:8px}
+.buy{background:#e6f7f0;color:var(--up)}.sell{background:#fdecec;color:var(--down)}.hold{background:#fff6e0;color:var(--hold)}
+.row{display:flex;gap:24px;flex-wrap:wrap;align-items:center}
+.darkbox{background:var(--navy);border-radius:14px;padding:22px;color:#fff}
+</style></head>
+<body><div class="wrap">
+
+  <div class="card">
+    <h1>Logo · lockup</h1>
+    <div class="lockup">
+      <div class="mark"><svg viewBox="0 0 64 64"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f6bff"/><stop offset="1" stop-color="#16d0a0"/></linearGradient></defs>
+        <circle cx="29" cy="29" r="17" fill="none" stroke="url(#g)" stroke-width="4"/>
+        <path d="M20 34 L26 28 L31 32 L39 22" fill="none" stroke="url(#g)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M42 42 L54 54" stroke="url(#g)" stroke-width="6" stroke-linecap="round"/></svg></div>
+      <div><div class="word">Grail<span class="g">Scope</span></div><div class="base">TRACK · TIME · TRADE FAIR</div></div>
+    </div>
+    <div class="darkbox" style="margin-top:18px"><div class="lockup">
+      <div class="mark" style="background:#fff"><svg viewBox="0 0 64 64"><circle cx="29" cy="29" r="17" fill="none" stroke="url(#g)" stroke-width="4"/><path d="M20 34 L26 28 L31 32 L39 22" fill="none" stroke="url(#g)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M42 42 L54 54" stroke="url(#g)" stroke-width="6" stroke-linecap="round"/></svg></div>
+      <div><div class="word" style="color:#fff">Grail<span class="g">Scope</span></div><div class="base">TRACK · TIME · TRADE FAIR</div></div>
+    </div></div>
+  </div>
+
+  <div class="card">
+    <h1>Palette</h1>
+    <div class="swatches">
+      <div class="sw"><div class="c" style="background:#0b1020"></div><div class="l"><b>Navy</b><span>#0b1020</span></div></div>
+      <div class="sw"><div class="c" style="background:#2f6bff"></div><div class="l"><b>Blue</b><span>#2f6bff</span></div></div>
+      <div class="sw"><div class="c" style="background:#16d0a0"></div><div class="l"><b>Teal</b><span>#16d0a0</span></div></div>
+      <div class="sw"><div class="c" style="background:#0aa66e"></div><div class="l"><b>Up</b><span>#0aa66e</span></div></div>
+      <div class="sw"><div class="c" style="background:#e5484d"></div><div class="l"><b>Down</b><span>#e5484d</span></div></div>
+      <div class="sw"><div class="c" style="background:#b07b00"></div><div class="l"><b>Hold</b><span>#b07b00</span></div></div>
+      <div class="sw"><div class="c" style="background:linear-gradient(135deg,#2f6bff,#16d0a0)"></div><div class="l"><b>Gradient</b><span>brand</span></div></div>
+      <div class="sw"><div class="c" style="background:#f5f7fb"></div><div class="l"><b>Soft</b><span>#f5f7fb</span></div></div>
+    </div>
+  </div>
+
+  <div class="card type">
+    <h1>Typographie</h1>
+    <p style="font-size:26px;font-weight:800;letter-spacing:-.7px">H1 · Le marché, enfin lisible</p>
+    <p style="font-size:20px;font-weight:800">H2 · Tendances du marché</p>
+    <p style="font-size:16px;font-weight:700">H3 · Signaux du jour</p>
+    <p style="font-size:14px">Corps · GrailScope agrège les données de l'art, du luxe, du sport et de la culture.</p>
+    <p style="font-size:12px;color:var(--muted)">Légende · données indicatives</p>
+  </div>
+
+  <div class="card">
+    <h1>Pilules de signal</h1>
+    <span class="pill buy">Acheter</span><span class="pill sell">Vendre</span><span class="pill hold">Conserver</span>
+  </div>
+
+</div></body></html>

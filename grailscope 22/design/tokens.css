@@ -1,0 +1,39 @@
+/* ============================================================
+   GrailScope — design tokens (single source of truth).
+   Imported by apps/web/src/styles.css and mirrored in
+   apps/mobile/src/theme.ts and design/tokens.ts.
+   ============================================================ */
+:root {
+  /* Brand */
+  --gs-navy:        #0b1020;  /* primary dark */
+  --gs-blue:        #2f6bff;  /* accent / actions */
+  --gs-teal:        #16d0a0;  /* gradient end */
+  --gs-accent-soft: #eaf0ff;
+
+  /* Semantic — market direction */
+  --gs-up:        #0aa66e;  --gs-up-soft:   #e6f7f0;
+  --gs-down:      #e5484d;  --gs-down-soft: #fdecec;
+  --gs-hold:      #b07b00;  --gs-hold-soft: #fff6e0;
+
+  /* Neutrals */
+  --gs-ink:   #0c1424;
+  --gs-muted: #6b7689;
+  --gs-line:  #e8ebf2;
+  --gs-soft:  #f5f7fb;
+  --gs-panel: #ffffff;
+
+  /* Radii */
+  --gs-radius-sm: 9px;
+  --gs-radius:    16px;
+  --gs-radius-lg: 22px;
+
+  /* Elevation */
+  --gs-shadow: 0 1px 2px rgba(16,24,40,.05), 0 8px 24px rgba(16,24,40,.06);
+
+  /* Type scale */
+  --gs-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --gs-h1: 26px; --gs-h2: 20px; --gs-h3: 16px; --gs-body: 14px; --gs-small: 12px;
+
+  /* Brand gradient */
+  --gs-gradient: linear-gradient(135deg, var(--gs-blue), var(--gs-teal));
+}

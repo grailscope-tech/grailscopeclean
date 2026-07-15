@@ -1,0 +1,42 @@
+{
+  "Black Lotus": {
+    "id": "b0faa7f2-b547-42c4-a810-839da50dadfe",
+    "name": "Black Lotus",
+    "set": "lea",
+    "set_name": "Limited Edition Alpha",
+    "rarity": "rare",
+    "prices": { "eur": "419999.99", "eur_foil": null, "usd": "450000.00" }
+  },
+  "Mox Sapphire": {
+    "id": "0c1e4a3b-1f2a-4c2d-9e6f-aa11bb22cc33",
+    "name": "Mox Sapphire",
+    "set": "lea",
+    "set_name": "Limited Edition Alpha",
+    "rarity": "rare",
+    "prices": { "eur": "28500.00", "eur_foil": null, "usd": "31000.00" }
+  },
+  "Ancestral Recall": {
+    "id": "11aa22bb-33cc-44dd-55ee-66ff77008811",
+    "name": "Ancestral Recall",
+    "set": "lea",
+    "set_name": "Limited Edition Alpha",
+    "rarity": "rare",
+    "prices": { "eur": "21000.00", "eur_foil": null, "usd": "22800.00" }
+  },
+  "Time Walk": {
+    "id": "99zz88yy-77xx-66ww-55vv-44uu33tt22ss",
+    "name": "Time Walk",
+    "set": "lea",
+    "set_name": "Limited Edition Alpha",
+    "rarity": "rare",
+    "prices": { "eur": "18750.00", "eur_foil": null, "usd": "20400.00" }
+  },
+  "Underground Sea": {
+    "id": "aa00bb11-cc22-dd33-ee44-ff5566778899",
+    "name": "Underground Sea",
+    "set": "lea",
+    "set_name": "Limited Edition Alpha",
+    "rarity": "rare",
+    "prices": { "eur": "4200.00", "eur_foil": null, "usd": "4600.00" }
+  }
+}

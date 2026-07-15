@@ -1,0 +1,7 @@
+{
+  "name:Charizard set.id:base1": { "data": [ { "id": "base1-4", "name": "Charizard", "rarity": "Rare Holo", "set": { "name": "Base" }, "cardmarket": { "prices": { "averageSellPrice": 372.5, "trendPrice": 399.0 } } } ] },
+  "name:Blastoise set.id:base1": { "data": [ { "id": "base1-2", "name": "Blastoise", "rarity": "Rare Holo", "set": { "name": "Base" }, "cardmarket": { "prices": { "averageSellPrice": 188.0, "trendPrice": 205.0 } } } ] },
+  "name:Venusaur set.id:base1": { "data": [ { "id": "base1-15", "name": "Venusaur", "rarity": "Rare Holo", "set": { "name": "Base" }, "cardmarket": { "prices": { "averageSellPrice": 142.0, "trendPrice": 150.0 } } } ] },
+  "name:Pikachu set.id:base1": { "data": [ { "id": "base1-58", "name": "Pikachu", "rarity": "Common", "set": { "name": "Base" }, "cardmarket": { "prices": { "averageSellPrice": 24.0, "trendPrice": 27.5 } } } ] },
+  "name:Mewtwo set.id:base1": { "data": [ { "id": "base1-10", "name": "Mewtwo", "rarity": "Rare Holo", "set": { "name": "Base" }, "cardmarket": { "prices": { "averageSellPrice": 96.0, "trendPrice": 101.0 } } } ] }
+}

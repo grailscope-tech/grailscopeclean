@@ -1,0 +1,23 @@
+# Fly.io deployment for the API (alternative to Render).
+#   fly launch --no-deploy   (then)   fly deploy
+app = "grailscope-api"
+primary_region = "cdg"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  PORT = "4000"
+  LIVE_CARDS = "1"
+
+[http_service]
+  internal_port = 4000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+
+[[http_service.checks]]
+  path = "/health"
+  interval = "30s"
+  timeout = "5s"

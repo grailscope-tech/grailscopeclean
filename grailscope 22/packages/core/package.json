@@ -1,0 +1,18 @@
+{
+  "name": "@grailscope/core",
+  "version": "0.1.0",
+  "description": "Shared domain logic: types, dataset, signal engine, data-source adapters.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

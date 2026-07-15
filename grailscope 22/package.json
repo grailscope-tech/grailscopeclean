@@ -1,0 +1,32 @@
+{
+  "name": "grailscope",
+  "private": true,
+  "version": "0.1.0",
+  "description": "GrailScope — transaction-free hub for high-value collectibles (art, luxury, sports, culture).",
+  "workspaces": [
+    "packages/*",
+    "apps/web",
+    "apps/mobile",
+    "server"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace @grailscope/web",
+    "dev:mobile": "npm run start --workspace @grailscope/mobile",
+    "dev:server": "npm run dev --workspace @grailscope/server",
+    "demo:feed": "node --import tsx server/scripts/demo-live-feed.ts",
+    "build:core": "npm run build --workspace @grailscope/core",
+    "build:web": "npm run build --workspace @grailscope/web",
+    "typecheck": "tsc -b packages/core apps/web"
+  },
+  "devDependencies": {
+    "tsx": "^4.16.0",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

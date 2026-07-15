@@ -1,0 +1,50 @@
+# Render Blueprint — deploys the whole GrailScope stack in one click.
+# In Render: New → Blueprint → point at this repo. Both services come up together.
+services:
+  # ---- API (Express + live Scryfall & Pokémon TCG connectors) ----
+  - type: web
+    name: grailscope-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: "4000"
+      - key: LIVE_CARDS        # turns on the automatic live feed
+        value: "1"
+      - key: JWT_SECRET        # session signing secret (auto-generated)
+        generateValue: true
+      - key: DATABASE_URL      # durable Postgres (see databases below)
+        fromDatabase:
+          name: grailscope-db
+          property: connectionString
+      - key: PGSSL
+        value: "1"
+
+  # ---- Web app (Vite static build, talks to the API above) ----
+  - type: web
+    name: grailscope-web
+    runtime: static
+    buildCommand: npm install && npm run build:web
+    staticPublishPath: ./apps/web/dist
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "22.11.0"
+      - key: VITE_DATA_SOURCE
+        value: http
+      - key: VITE_API_URL
+        # Set to the API URL after first deploy, e.g. https://grailscope-api.onrender.com
+        sync: false
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+
+# Managed Postgres → durable accounts, watchlists, alerts & notifications.
+# (Remove this block and DATABASE_URL to fall back to file-based SQLite.)
+databases:
+  - name: grailscope-db
+    plan: free
